@@ -36,6 +36,9 @@ Then the rest of the .md file.
 - More templates
 - Better error handling
 - Code refactoring (it's bad)
+- Images
+- Nav bar positioning (now it's alphabetical)
+- Next/back button
 
 ## Examples
 ```Markdown
