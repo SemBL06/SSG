@@ -4,7 +4,7 @@ A SSG for documentation. Used for all my projects.
 ## Start
 Install dependencies
 ```Bash
-python install requirements.txt
+python install -r requirements.txt
 ```
 Then
 ```Bash
