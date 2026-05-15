@@ -28,7 +28,7 @@ Then the rest of the .md file.
 ## Features
 - Generates sitemap
 - Generates robots.txt
-- Supports all filetypes
+- Supports all filetypes (.ico, .jpeg...)
 - Code highlighting
 
 ## Working on (never going to happen)
