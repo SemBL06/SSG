@@ -11,7 +11,7 @@ to start the wizard.
 ### Content
 Doesn't matter, everyhting gets copied. 
 #### .md
-Should have a heading e.g:
+Should have a heading e.g: (minimum = title)
 ```yaml
 ---
 title: Welcome
@@ -22,6 +22,8 @@ sitemap:
 ---
 ```
 Then the rest of the .md file. 
+
+
 
 ## Features
 - Generates sitemap
