@@ -43,6 +43,7 @@ Then the rest of the .md file.
 - Images
 - Nav bar positioning (now it's alphabetical)
 - Next/back button
+- Python 3.13 and older support (.copy isn't a thing there)
 
 ## Examples
 ```Markdown
