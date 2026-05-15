@@ -1,0 +1,416 @@
+/* =========================================
+   Minimal Documentation Page Template
+   Clean, neutral, low-color design
+========================================= */
+
+:root {
+  --bg: #f7f7f7;
+  --surface: #ffffff;
+  --border: #e4e4e4;
+
+  --text: #1f1f1f;
+  --text-muted: #666666;
+
+  --code-bg: #f1f1f1;
+
+  --radius: 10px;
+
+  --max-width: 900px;
+
+  --font-sans:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+/* =========================================
+   Base Reset
+========================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background: var(--bg);
+  color: var(--text);
+
+  font-family: var(--font-sans);
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
+}
+
+/* =========================================
+   Layout
+========================================= */
+
+main {
+  padding: 1rem;
+}
+
+/*.page {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 100vh;
+}*/
+
+.page {
+  display: flex;
+  min-height: 100vh;
+}
+
+/*.sidebar {
+  position: sticky;
+  top: 0;
+
+  height: 100vh;
+  overflow-y: auto;
+
+  padding: 2rem 1.5rem;
+
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+}*/
+
+.sidebar {
+  width: 280px;
+  flex-shrink: 0;
+
+  padding: 1rem;
+
+  background: #ffffff;
+  border-right: 1px solid #e5e5e5;
+
+  overflow-y: auto;
+}
+/*.content {
+  width: 100%;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}*/
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+/* =========================================
+   Typography
+========================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+
+  line-height: 1.25;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+p {
+  margin: 1rem 0;
+  color: var(--text);
+}
+
+small,
+.muted {
+  color: var(--text-muted);
+}
+
+/* =========================================
+   Links
+========================================= */
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #cfcfcf;
+  text-underline-offset: 2px;
+
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* =========================================
+   Navigation
+========================================= */
+
+#logo {
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.nav-tree {
+  list-style: none;
+  padding-left: 0.75rem;
+  margin: 0;
+}
+
+.nav-tree li {
+  margin: 0.2rem 0;
+}
+
+.nav-tree a,
+.nav-tree summary {
+  display: block;
+  padding: 0.45rem 0.6rem;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  color: #444;
+}
+
+.nav-tree a:hover,
+.nav-tree summary:hover {
+  background: #f3f3f3;
+}
+
+.nav-tree details > summary {
+  list-style: none;
+}
+
+.nav-tree details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-tree details > summary::before {
+  content: "▸";
+  display: inline-block;
+
+  margin-right: 0.5rem;
+
+  transition: transform 0.15s ease;
+}
+
+.nav-tree details[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+/* =========================================
+   Lists
+========================================= */
+
+ul,
+ol {
+  padding-left: 1.5rem;
+}
+
+li + li {
+  margin-top: 0.4rem;
+}
+
+/* =========================================
+   Code
+========================================= */
+
+code {
+  padding: 0.15rem 0.4rem;
+
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
+pre {
+  overflow-x: auto;
+
+  padding: 1rem 1.25rem;
+
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+pre code {
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+/* =========================================
+   Tables
+========================================= */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  margin: 2rem 0;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 0.9rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  font-weight: 600;
+  background: #fafafa;
+}
+
+/* =========================================
+   Blockquotes
+========================================= */
+
+blockquote {
+  margin: 2rem 0;
+  padding: 0.75rem 1.25rem;
+
+  border-left: 3px solid #d4d4d4;
+
+  color: var(--text-muted);
+  background: #fafafa;
+}
+
+/* =========================================
+   Horizontal Rule
+========================================= */
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+
+  margin: 3rem 0;
+}
+
+/* =========================================
+   Utility Components
+========================================= */
+
+.card {
+  padding: 1.25rem;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 1.8rem;
+  height: 1.8rem;
+  padding: 0 0.45rem;
+
+  border: 1px solid var(--border);
+  border-bottom-width: 2px;
+  border-radius: 6px;
+
+  background: white;
+
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
+}
+
+/* =========================================
+   Mobile Layout
+========================================= */
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    width: 100%;
+
+    padding: 1rem 1.25rem;
+
+    background: white;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+  }
+
+  .sidebar {
+    display: none;
+
+    width: 100%;
+    height: auto;
+
+    border-right: none;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .sidebar.open {
+    display: block;
+  }
+
+  .container {
+    padding: 2rem 1.25rem;
+  }
+}

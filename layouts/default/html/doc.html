@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    {{ meta | safe }}
+  </head>
+
+  <body>
+    {% macro render_tree(items) %}
+    <ul class="nav-tree">
+      {% for item in items %}
+      <li>
+        {% if item.type == "folder" %}
+
+        <details>
+          <summary>{{ item.title }}</summary>
+          {{ render_tree(item.children) }}
+        </details>
+
+        {% else %}
+
+        <a href="{{ item.path }}"> {{ item.title }} </a>
+
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% endmacro %}
+
+    <!-- Mobile Toggle -->
+    <button class="mobile-nav-toggle">☰ {{ title | safe }}</button>
+
+    <!-- Main Layout -->
+    <div class="page">
+      <!-- Sidebar -->
+      <aside class="sidebar" id="sidebar">
+        <div id="logo">{{ title | safe }}</div>
+
+        <nav class="nav">{{ render_tree(sidebar_tree) }}</nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="content">
+        <div class="container">{{ body | safe }}</div>
+      </main>
+    </div>
+
+    <!-- JS at bottom -->
+    <script>
+      const toggle = document.querySelector(".mobile-nav-toggle");
+      const sidebar = document.querySelector("#sidebar");
+
+      toggle.addEventListener("click", () => {
+        sidebar.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
