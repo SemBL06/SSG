@@ -2,7 +2,11 @@
 A SSG for documentation. Used for all my projects. 
 
 ## Start
-Run
+Install dependencies
+```Bash
+python install requirements.txt
+```
+Then
 ```Bash
 python main.py
 ```
