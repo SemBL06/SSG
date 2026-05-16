@@ -47,6 +47,7 @@ Then the rest of the .md file.
 - A way to directly push the website to a server?
 - Export function (.zip, .tar...)
 - .ico relative path
+- Fix non-working expanding button on mobile
 
 ## Examples
 ### Working example
