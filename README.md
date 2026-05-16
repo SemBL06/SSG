@@ -77,6 +77,8 @@ display print "Hello there!" #It's Flanlang code
 ```
 <img width="1407" height="1523" alt="image" src="https://github.com/user-attachments/assets/74a7d856-9b25-4cf2-b6df-f15e1106b186" />
 
-
+# License
+Free for personal, educational, research, and non-commercial use.
+Commercial use requires written permission or a separate commercial license.
 
 
