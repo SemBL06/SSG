@@ -46,6 +46,7 @@ Then the rest of the .md file.
 - Python 3.13 and older support (.copy isn't a thing there)
 - A way to directly push the website to a server?
 - Export function (.zip, .tar...)
+- .ico relative path
 
 ## Examples
 ### Working example
