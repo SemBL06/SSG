@@ -46,6 +46,9 @@ Then the rest of the .md file.
 - Python 3.13 and older support (.copy isn't a thing there)
 
 ## Examples
+### Working example
+[FlanOS Documentation](https://flanos.forageek.com/)
+### Code + Screenshot
 ```Markdown
 ---
 title: Welcome
@@ -70,13 +73,7 @@ display print "Hello there!" #It's Flanlang code
 | February | $80     |
 | March    | $420    |
 ```
-## The Page
-
 <img width="1407" height="1523" alt="image" src="https://github.com/user-attachments/assets/74a7d856-9b25-4cf2-b6df-f15e1106b186" />
-
-### Sidebar (responsive)
-
-<img width="560" height="669" alt="image" src="https://github.com/user-attachments/assets/a14b1f09-367a-4574-8d75-8b54e942a4b8" />
 
 
 
